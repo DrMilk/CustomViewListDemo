@@ -3,8 +3,8 @@
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/pink_red_toobar</item>
-        <item name="colorPrimaryDark">@color/pink_red_toobar</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/blue_black</item>
     </style>
 
@@ -19,28 +19,7 @@
     <!-- word style-->
     <style name="style_about">
         <item name="android:textSize">14sp</item>
-        <!--<item name="android:textStyle">bold</item>-->
-        <item name="android:textColor">@color/black</item>
-    </style>
-
-    <style name="style_about_fu">
-        <item name="android:textSize">14sp</item>
-        <!--<item name="android:textStyle">bold</item>-->
-        <item name="android:textColor">@color/gray</item>
-    </style>
-    <style name="title_font">
-        <item name="android:textSize">18sp</item>
-        <!--<item name="android:textStyle">bold</item>-->
-        <item name="android:textColor">@color/white</item>
-    </style>
-    <style name="bottom_titil_font">
-        <item name="android:textSize">12sp</item>
-        <!--<item name="android:textStyle">bold</item>-->
-        <item name="android:textColor">@color/white_smoke</item>
-    </style>
-    <style name="key_font">
-        <item name="android:textSize">16sp</item>
-        <item name="android:textStyle">italic</item>
+        <item name="android:textStyle">bold</item>
         <item name="android:textColor">@color/blue_black</item>
     </style>
     <style name="style_linear">

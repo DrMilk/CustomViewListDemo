@@ -12,13 +12,11 @@ import com.namewu.customviewlistdemo.R;
 
 
 /**
- * Created by Administrator on 2017/4/3
- * Author 吴振宇
+ * Created by Administrator on 2017/1/21.
  */
 
 public class WuCircularStatistics extends View {
     private String TAG="WuCircularStatistics";
-    private String[] level=new String[]{"狂喜","开心","一般","难过","伤悲"};
     private int[] strpresent=new int[]{};
     private float radius=300;
     private float circularwidth=150;
@@ -28,8 +26,7 @@ public class WuCircularStatistics extends View {
     private int[] mColor = new int[]{this.getResources().getColor(R.color.purple_level),
                                     this.getResources().getColor(R.color.red_level),
                                     this.getResources().getColor(R.color.blue_level),
-                                    this.getResources().getColor(R.color.yello_level),
-                                    this.getResources().getColor(R.color.green_level)};
+                                    this.getResources().getColor(R.color.yello_level)};
     public WuCircularStatistics(Context context) {
         super(context);
     }
