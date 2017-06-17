@@ -15,6 +15,7 @@ import com.namewu.customviewlistdemo.R;
  */
 
 public class CircleFragment extends Fragment {
+    private String TAG="CircleFragment";
     private TextView text_circle_balance;//余额
     private TextView text_circle_balancetreasure;//余额宝
     private TextView text_circle_terminal;//定期
