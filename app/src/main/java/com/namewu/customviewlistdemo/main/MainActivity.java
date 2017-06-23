@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -13,6 +14,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.namewu.customviewlistdemo.R;
+import com.namewu.customviewlistdemo.networkcommunication.OkhttpUsingActivity;
 import com.namewu.customviewlistdemo.wuview.CircleFragment;
 import com.namewu.customviewlistdemo.wuview.WuTagCloudLayout;
 
@@ -60,12 +62,19 @@ public class MainActivity extends Activity implements View.OnClickListener{
 
     @Override
     public void onClick(View view) {
-        switch (view.getId()){
-            case R.id.button_circle:
-                CircleFragment circle=new CircleFragment();
-                fragmentTransaction=fragmentManager.beginTransaction();
-                fragmentTransaction.replace(R.id.linear_show,circle);
-                fragmentTransaction.commit();break;
-        }
+//        switch (view.getId()){
+//            case R.id.button_circle:
+//                CircleFragment circle=new CircleFragment();
+//                fragmentTransaction=fragmentManager.beginTransaction();
+//                fragmentTransaction.replace(R.id.linear_show,circle);
+//                fragmentTransaction.commit();break;
+//        }
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        Intent it=new Intent(this, OkhttpUsingActivity.class);
+        startActivity(it);
     }
 }
