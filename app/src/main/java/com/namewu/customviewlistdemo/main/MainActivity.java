@@ -23,6 +23,7 @@ import com.namewu.customviewlistdemo.wuview.WuTagCloudLayout;
  */
 
 public class MainActivity extends Activity implements View.OnClickListener{
+    private static final String TAG = "MainActivity";
     private WuTagCloudLayout show_layout;
     private FragmentManager fragmentManager;
     private FragmentTransaction fragmentTransaction;
