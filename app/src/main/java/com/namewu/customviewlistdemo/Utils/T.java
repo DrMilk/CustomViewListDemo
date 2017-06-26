@@ -8,6 +8,7 @@ import android.widget.Toast;
  */
 
 public class T {
+    private static final String TAG = "T";
     private T() {
         throw new UnsupportedOperationException("T cannot instantiated!");
     }

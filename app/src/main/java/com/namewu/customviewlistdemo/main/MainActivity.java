@@ -18,6 +18,8 @@ import com.namewu.customviewlistdemo.networkcommunication.OkhttpUsingActivity;
 import com.namewu.customviewlistdemo.wuview.CircleFragment;
 import com.namewu.customviewlistdemo.wuview.WuTagCloudLayout;
 
+import org.json.JSONObject;
+
 /**
  * Created by Administrator on 2017/4/3.
  */
@@ -28,6 +30,7 @@ public class MainActivity extends Activity implements View.OnClickListener{
     private FragmentManager fragmentManager;
     private FragmentTransaction fragmentTransaction;
     private Context mcontext;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
