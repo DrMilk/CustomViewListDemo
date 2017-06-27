@@ -88,4 +88,7 @@ public class OkhttpUsingActivity extends Activity implements View.OnClickListene
             }
         });
     }
+    private void doPost(){
+
+    }
 }
