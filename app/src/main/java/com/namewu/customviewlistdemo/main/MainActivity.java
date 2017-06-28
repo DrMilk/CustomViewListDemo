@@ -6,6 +6,7 @@ import android.app.FragmentTransaction;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -20,6 +21,10 @@ import com.namewu.customviewlistdemo.wuview.WuTagCloudLayout;
 
 import org.json.JSONObject;
 
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Iterator;
+
 /**
  * Created by Administrator on 2017/4/3.
  */
@@ -30,7 +35,75 @@ public class MainActivity extends Activity implements View.OnClickListener{
     private FragmentManager fragmentManager;
     private FragmentTransaction fragmentTransaction;
     private Context mcontext;
+    private Collection collection=new Collection() {
+        @Override
+        public int size() {
+            return 0;
+        }
 
+        @Override
+        public boolean isEmpty() {
+            return false;
+        }
+
+        @Override
+        public boolean contains(Object o) {
+            return false;
+        }
+
+        @NonNull
+        @Override
+        public Iterator iterator() {
+            return null;
+        }
+
+        @NonNull
+        @Override
+        public Object[] toArray() {
+            return new Object[0];
+        }
+
+        @NonNull
+        @Override
+        public Object[] toArray(Object[] objects) {
+            return new Object[0];
+        }
+
+        @Override
+        public boolean add(Object o) {
+            return false;
+        }
+
+        @Override
+        public boolean remove(Object o) {
+            return false;
+        }
+
+        @Override
+        public boolean containsAll(Collection collection) {
+            return false;
+        }
+
+        @Override
+        public boolean addAll(Collection collection) {
+            return false;
+        }
+
+        @Override
+        public boolean removeAll(Collection collection) {
+            return false;
+        }
+
+        @Override
+        public boolean retainAll(Collection collection) {
+            return false;
+        }
+
+        @Override
+        public void clear() {
+
+        }
+    };
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
